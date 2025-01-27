@@ -16,15 +16,15 @@ spec:
           automountServiceAccountToken: false
           containers:
             - name: tournament-runner-production
-              image: "rhaversen/gaslight-code-runner:47e78701ae4406005fcec01f5cdac651764a0d33"
+              image: "rhaversen/gaslight-code-runner:630e598fec84505b02c3ccec3de435f17b915349"
               imagePullPolicy: Always
               resources:
                 limits:
-                  cpu: "400m"
-                  memory: "300M"
+                  cpu: "500m"
+                  memory: "1024M"
                 requests:
                   cpu: "250m"
-                  memory: "200M"
+                  memory: "512M"
               envFrom:
                 - secretRef:
                     name: tournament-runner-secrets

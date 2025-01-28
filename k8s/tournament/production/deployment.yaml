@@ -12,12 +12,11 @@ spec:
           labels:
             app: tournament-runner-production
         spec:
-          ttlSecondsAfterFinished: 3600  # Retains job for 1 hour after completion for debugging
           restartPolicy: Never
           automountServiceAccountToken: false
           containers:
             - name: tournament-runner-production
-              image: "rhaversen/gaslight-code-runner:1f9b87afb8d17016a6ce27c8979106f3b9276f17"
+              image: "rhaversen/gaslight-code-runner:37cf584e2fbdf13549d92b00236b5622a5b42387"
               imagePullPolicy: Always
               resources:
                 limits:

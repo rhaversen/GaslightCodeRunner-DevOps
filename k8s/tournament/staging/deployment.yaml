@@ -16,7 +16,7 @@ spec:
           automountServiceAccountToken: false
           containers:
             - name: tournament-runner-production
-              image: "rhaversen/gaslight-code-runner:c86f8f7f3648140f25554e462819d87423344f92"
+              image: "rhaversen/gaslight-code-runner:aab9e809481614353f69d3e14f286d2df7e41885"
               imagePullPolicy: Always
               resources:
                 limits:
